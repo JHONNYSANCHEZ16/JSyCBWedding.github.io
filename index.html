@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación de Boda</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=TU_API_KEY"></script>
+</head>
+<body>
+    <header>
+        <h1>Invitación a nuestra boda</h1>
+        <p>¡Estás cordialmente invitado!</p>
+        <div id="countdown"></div>
+    </header>
+
+    <section id="details">
+        <h2>Itinerario</h2>
+        <ul>
+            <li>Ceremonia: 12:00 PM</li>
+            <li>Recepción: 2:00 PM</li>
+        </ul>
+
+        <h2>Ubicación</h2>
+        <div id="map" style="height: 300px; width: 100%;"></div>
+    </section>
+
+    <section id="rsvp">
+        <h2>Confirmar asistencia</h2>
+        <form id="rsvp-form">
+            <input type="text" id="name" placeholder="Tu nombre" required>
+            <input type="email" id="email" placeholder="Tu correo" required>
+            <button type="submit">Confirmar</button>
+        </form>
+    </section>
+
+    <section id="seating-chart">
+        <h2>Mapa de Mesas</h2>
+        <img src="mapa-de-mesas.jpg" alt="Mapa de las mesas">
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
